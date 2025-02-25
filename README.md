@@ -5,5 +5,5 @@ Run [DeepSeek R1 Distill Qwen 7B](https://ollama.com/library/deepseek-r1) on Lil
 ## Getting Started
 
 ```sh
-lilypad run github.com/DevlinRocha/lilypad-deepseek-r1-7b:v0.0.0 -i prompt="" -i temperature="" -i max_tokens=""
+lilypad run github.com/DevlinRocha/lilypad-deepseek-r1-7b:v0.0.0 -i prompt="" -i temperature="0.7" -i max_tokens="2048"
 ```
