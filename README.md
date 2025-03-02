@@ -5,5 +5,22 @@ Run [DeepSeek R1 Distill Qwen 7B](https://ollama.com/library/deepseek-r1) on Lil
 ## Getting Started
 
 ```sh
-lilypad run github.com/DevlinRocha/lilypad-deepseek-r1-7b:v0.0.0 -i prompt="" -i temperature="0.7" -i max_tokens="2048"
+export WEB3_PRIVATE_KEY=WEB3_PRIVATE_KEY
+
+lilypad run github.com/DevlinRocha/lilypad-deepseek-r1-7b:3334fe0d8329c516898a67be0ef656c7492a9d79 \
+-i request="$(echo -n '{
+  "model": "deepseek-r1:7b",
+  "messages": [{
+    "role": "system",
+    "content": "you are a helpful AI assistant"
+  },
+  {
+  "role": "user",
+  "content": "what is the animal order of the frog?"
+  }],
+  "stream": false,
+  "options": {
+    "temperature": 1.0
+  }
+}' | base64 -w 0)"
 ```
