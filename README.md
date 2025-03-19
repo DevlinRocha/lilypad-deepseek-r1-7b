@@ -7,7 +7,7 @@ Run [DeepSeek R1 Distill Qwen 7B](https://ollama.com/library/deepseek-r1) on Lil
 ```sh
 export WEB3_PRIVATE_KEY=WEB3_PRIVATE_KEY
 
-lilypad run github.com/DevlinRocha/lilypad-deepseek-r1-7b:c8818637e68d5a635ae19f6318756c80898a4593 \
+lilypad run github.com/DevlinRocha/lilypad-deepseek-r1-7b:d5841dad21006c863f27faf583f70b7c16e78ed4 \
 -i request="$(echo -n '{
   "model": "deepseek-r1:7b",
   "messages": [{
